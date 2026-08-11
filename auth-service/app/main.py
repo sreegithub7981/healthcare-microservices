@@ -14,7 +14,7 @@ Base.metadata.create_all(bind=engine)
 password_hash = PasswordHash.recommended()
 
 
-@app.get("/")
+@app.get("/sree")
 def root():
     return {
         "service": "auth-service",
