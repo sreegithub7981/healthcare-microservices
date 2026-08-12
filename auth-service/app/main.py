@@ -6,7 +6,7 @@ from .database import Base, engine, get_db
 from .models import User
 from .schemas import LoginRequest
 from .security import create_access_token
-#sreekanth
+
 app = FastAPI(title="Auth Service")
 
 Base.metadata.create_all(bind=engine)
